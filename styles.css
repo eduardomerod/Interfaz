@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif; /* Fuente predeterminada */
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina padding por defecto */
+  box-sizing: border-box; /* Asegura que ancho y alto incluyan bordes y padding */
+  color: #333; /* Color de texto general */
+}
+
+.container {
+  width: 90%; /* Anchura relativa para dispositivos pequeños */
+  max-width: 1200px; /* Anchura máxima en pantallas grandes */
+  margin: 0 auto; /* Centra el contenido */
+}
+
+/* Estilos del encabezado */
+.header {
+  background: #ffffff; /* Fondo blanco */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar */
+  position: fixed; /* Fija el encabezado al tope de la página */
+  width: 100%; /* Cubre todo el ancho de la pantalla */
+  z-index: 1000; /* Se asegura de estar encima de otros elementos */
+}
+
+.header .container {
+  display: flex; /* Alinea elementos en una fila */
+  justify-content: space-between; /* Espacia los elementos extremos (logo y menú) */
+  align-items: center; /* Alinea verticalmente al centro */
+  padding: 1rem 0; /* Espaciado interno superior e inferior */
+}
+
+.logo {
+  font-size: 1.5rem; /* Tamaño del texto del logo */
+  font-weight: bold; /* Negrita */
+  color: #007BFF; /* Azul principal */
+}
+
+.nav a {
+  margin: 0 1rem; /* Espaciado horizontal entre enlaces */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: #555; /* Color gris oscuro para texto */
+  transition: color 0.3s ease; /* Efecto suave al pasar el ratón */
+}
+
+.nav a:hover {
+  color: #007BFF; /* Cambia a azul al pasar el ratón */
+}
+
+.cta-btn {
+  background: #007BFF; /* Fondo azul */
+  color: #fff; /* Texto blanco */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border: none; /* Quita el borde por defecto */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a "mano" */
+  transition: background 0.3s ease; /* Efecto suave al cambiar el fondo */
+}
+
+.cta-btn:hover {
+  background: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilos de la sección hero */
+.hero {
+  position: relative; /* Asegura que el contenido dentro de esta sección se posicione adecuadamente */
+  background-image: url('imagen.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100vh; /* La sección ocupará toda la altura visible de la pantalla */
+  display: flex; /* Flexbox para centrar el contenido */
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  color: #fff; /* Texto blanco para contrastar con el fondo */
+  text-align: center; /* Centra el texto */
+  padding: 1rem; /* Espaciado interno */
+}
+
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.808); /* Fondo blanco translúcido para el texto */
+  padding: 1.5rem; /* Espaciado interno para que el texto no quede pegado al borde */
+  border-radius: 10px; /* Bordes redondeados para un diseño más atractivo */
+  text-align: center; /* Centra el texto */
+  color: #000; /* Cambia el color del texto a negro */
+  max-width: 600px; /* Limita el ancho del contenido para evitar que ocupe toda la pantalla */
+  margin: 0 auto ; /* Mueve el texto hacia abajo con un margen superior */
+}
+
+
+/* Estilos de servicios */
+.services {
+  background-color: #e0f7fa; /* Fondo celeste claro */
+  padding: 3rem 1rem; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+}
+
+.services h2 {
+  color: #00796b; /* Cambia el color del título a un tono verde azulado */
+  margin-bottom: 2rem; /* Añade espacio debajo del título */
+}
+
+.service-cards {
+  display: flex; /* Alinea elementos en fila */
+  flex-wrap: wrap; /* Permite que las tarjetas bajen si no caben */
+  gap: 2rem; /* Espaciado entre tarjetas */
+  justify-content: center; /* Centra las tarjetas */
+}
+
+.service-card {
+  background: #f9f9f9; /* Fondo gris claro */
+  padding: 2rem; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  max-width: 300px; /* Anchura máxima */
+  text-align: center; /* Centra el texto */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos del pie de página */
+.footer {
+  background: #333; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  padding: 1rem 0; /* Espaciado interno */
+  text-align: center; /* Centra el contenido */
+}
